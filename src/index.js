@@ -33,11 +33,13 @@ const onInput = event => {
       </li>`
             )
             .join('');
-          if (nameCountry.length >= 2) {
+
+          if (data.length >= 2) {
             countryList.innerHTML = htmlString;
           }
 
           if (data.length === 1) {
+            countryList.innerHTML = htmlString;
             countryInfo.innerHTML = `<p class="text-info"><span class ="info-title">Capital:</span>${
               data[0].capital
             }</p>
